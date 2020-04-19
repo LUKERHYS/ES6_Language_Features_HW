@@ -13,5 +13,8 @@ class Book {
     this.genre = genre;
   };
 };
+// BEFORE
+// module.exports = Book;
 
-module.exports = Book;
+// AFTER
+export default Book;

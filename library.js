@@ -1,5 +1,13 @@
-const Library = function (books = []) {
-  this.books = books;
+// BEFORE
+// const Library = function (books = []) {
+//   this.books = books;
+// };
+
+// AFTER
+class Library {
+  constructor(books = []) {
+    this.books = books;
+  };
 };
 
 Library.prototype.bookCount = function () {
@@ -19,5 +27,8 @@ Library.prototype.printInventory = function () {
     console.log(`${book.title} by ${book.author}`);
   });
 };
+// BEFORE
+// module.exports = Library;
 
-module.exports = Library;
+// AFTER
+export default Library;
