@@ -1,0 +1,2 @@
+# Exclude node modules, run 'npm install' to build your own node modules directory 
+/node_modules
